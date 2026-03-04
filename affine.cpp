@@ -69,7 +69,8 @@ int main()
 
     // Display the transformation matrix
     cout << "Transformation Matrix: " << endl;
-    cout << transform << endl;
+    cout << transform;
+    cout << endl;
     cout << endl;
 
     // transform points

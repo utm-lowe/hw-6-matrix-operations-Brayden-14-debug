@@ -49,7 +49,7 @@ std::ostream& operator<<(std::ostream& os, const Matrix& m){
     for (int i = 0; i < m.getRows(); ++i){
         for (int j = 0; j < m.getCols(); ++j)
             os << std::setw(10) << m.at(i,j);
-        os << " \n";
+        os << "\n";
     }
     return os;
 }

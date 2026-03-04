@@ -147,8 +147,8 @@ Matrix translate(double tx, double ty)
     //         0 1 ty
     //         0 0 1
     Matrix m = transIdent();
-    m.at(2, 0) = tx;
-    m.at(2, 1) = ty;
+    m.at(0, 2) = tx;
+    m.at(1, 2) = ty;
     return m;
 }
 
@@ -184,7 +184,7 @@ Matrix transformMenu()
                 result = transRotate(angle) * result;
                 break;
             case 'S':
-                cout << "Enter the x and y scaling factor: ";
+                cout << "Enter the x and y scaling factors: ";
                 cin >> x >> y;
                 result = transScale(x, y) * result;
                 break;

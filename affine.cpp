@@ -147,8 +147,8 @@ Matrix translate(double tx, double ty)
     //         0 1 ty
     //         0 0 1
     Matrix m = transIdent();
-    m.at(0, 2) = tx;
-    m.at(1, 2) = ty;
+    m.at(2, 0) = tx;
+    m.at(2, 1) = ty;
     return m;
 }
 
@@ -191,7 +191,6 @@ Matrix transformMenu()
             case 'D':
                 break;
             default:
-                cout << "Invalid choice. Please enter T, R, S, or D." << endl;
                 break;
         }
 

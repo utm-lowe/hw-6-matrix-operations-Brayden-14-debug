@@ -71,7 +71,7 @@ notes:
   this can be accomplished by doing `return *this;` 
 * In the copy constructor and in the assignment operator, you will have access
   to the private members of rhs. 
-
+ 
 ## Implementing Matrix Operators
  Your matrix operators should be implemented according to the math described
 in the linked article. For now, we can assume that all dimensions will work out.
